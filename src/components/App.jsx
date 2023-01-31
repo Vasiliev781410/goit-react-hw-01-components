@@ -10,11 +10,11 @@ import transactions from './transactionHistory/transactions.json';
 export const App = () => {
   return (
     <div
-      style={{
-        height: '100vh',        
+      style={{                
         justifyContent: 'center',
         alignItems: 'center',
         fontSize: 40,
+        backgroundColor: 'rgb(223, 219, 219)',
         color: '#010101'
       }}
     >

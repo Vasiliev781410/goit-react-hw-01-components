@@ -1,9 +1,10 @@
 import PropTypes from 'prop-types';
+import css from './Statistics.module.css';
 
 const Stat = ({elem}) =>( 
-    <li className="item">
-        <span className="label">{elem.label}</span>
-        <span className="percentage">{elem.percentage}</span>
+    <li className={css.item}>
+        <span className={css.label}>{elem.label}</span>
+        <span className={css.percentage}>{elem.percentage}%</span>
     </li>
 ); 
 

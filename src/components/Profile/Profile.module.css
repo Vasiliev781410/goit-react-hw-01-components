@@ -1,11 +1,12 @@
-.profile{  
+.profile{      
     margin-bottom: 0px;  
     margin-left: auto;
     margin-right: auto;
-    border-radius: 4px;
+    border-radius: 5px;
     border: 1px solid rgb(223, 219, 219); 
     padding-top: 30px;
-    width: 300px;      
+    width: 300px; 
+    background-color: #fff;     
 }
 .description{    
     padding-left: 40px;
@@ -32,6 +33,7 @@
 .location{
     opacity: 50%; 
     font-weight: 600; 
+    font-size: 20px;
 }
 .name{
     font-weight: 700;
@@ -50,13 +52,15 @@
     list-style: none;
     display: flex; 
     justify-content: center;
+    border-radius: 4px;
     background-color:rgb(247, 250, 244)  
 }
 .statItem{    
     width: 100px;
     padding-top: 20px;
-    padding-bottom: 15px;  
-    border: 1px solid rgb(223, 219, 219); 
+    padding-bottom: 15px; 
+    border-radius: 4px; 
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
 .label,
