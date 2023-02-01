@@ -1,11 +1,15 @@
 import PropTypes from 'prop-types';
+import css from './TransactionHistory.module.css';
 
-const TransactionItem = ({item}) =>{    
+const TransactionItem = ({item,number}) =>{ 
+    let styled = null;
+    console.log(number);
+    number % 2 === 0 ? styled = css.transactionAccent  : styled = css.transactionRow;
     return ( 
-    <tr>
-        <td>{item.type}</td>
-        <td>{item.amount}</td>
-        <td>{item.currency}</td>
+    <tr className={styled}>
+        <td className={css.transactionColomnType}>{item.type}</td>
+        <td className={css.transactionBorder}>{item.amount}</td>
+        <td className={css.transactionBorder}>{item.currency}</td>
     </tr>      
     );
 }   
