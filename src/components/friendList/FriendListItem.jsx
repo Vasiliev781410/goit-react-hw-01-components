@@ -2,8 +2,7 @@ import PropTypes from 'prop-types';
 import css from './FriendsList.module.css';
 
 
-const FriendListItem = ({friend}) =>{
-    console.log(friend.isOnline);    
+const FriendListItem = ({friend}) =>{   
     return ( 
         <li className={css.item}> 
         {friend.isOnline === true ? <span className={css.status}></span> : <span className={css.statusOff}></span>}            

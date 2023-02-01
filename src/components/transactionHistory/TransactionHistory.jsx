@@ -3,7 +3,6 @@ import PropTypes from 'prop-types';
 import css from './TransactionHistory.module.css';
 
 const TransactionHistory = ({items,}) =>{
-    let numb = 0;
     return (<table className={css.transactionHistory}>
         <thead className={css.transactionHeader}>
             <tr>
@@ -14,9 +13,8 @@ const TransactionHistory = ({items,}) =>{
         </thead>
 
         <tbody>   
-            {items.map(transaction =>{
-                numb = numb + 1;              
-                return (<TransactionItem key={transaction.id} item={transaction} number={numb}/>)})}
+            {items.map(transaction =>{                            
+                return (<TransactionItem key={transaction.id} item={transaction}/>)})}
         </tbody>
     </table>   
   )};  

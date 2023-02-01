@@ -22,14 +22,12 @@
     border: 1px solid gainsboro;
     padding: 5px 20px;
 }
-.transactionAccent{
-    text-align: center; 
-    opacity: 80%;  
-    background-color: aliceblue;
-}
 .transactionRow{
     text-align: center; 
     opacity: 80%;  
+}
+.transactionRow:nth-child(2n) {
+    background-color: aliceblue; 
 }
 .transactionColomnType{
     composes: transactionBorder;   

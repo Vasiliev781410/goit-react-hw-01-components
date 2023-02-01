@@ -1,12 +1,9 @@
 import PropTypes from 'prop-types';
 import css from './TransactionHistory.module.css';
 
-const TransactionItem = ({item,number}) =>{ 
-    let styled = null;
-    console.log(number);
-    number % 2 === 0 ? styled = css.transactionAccent  : styled = css.transactionRow;
+const TransactionItem = ({item}) =>{ 
     return ( 
-    <tr className={styled}>
+    <tr className={css.transactionRow}>
         <td className={css.transactionColomnType}>{item.type}</td>
         <td className={css.transactionBorder}>{item.amount}</td>
         <td className={css.transactionBorder}>{item.currency}</td>
